@@ -30,19 +30,23 @@ GD::Graph::Data
 Text::Table
 File::Path
 POSIX
+Excel::Writer::XLSX
 
 ### Sur AIX:
 /usr/bin/perl -MCPAN -e shell
 install DBI
 install GD::Graph
 install Text::Table
+install Excel::Writer::XLSX
 
 
 ### Sur Linux (RedHat/CentOS):
 yum install perl-GD perl-GDGraph perl-DBI
 cpan install Text::Table
+cpan install Excel::Writer::XLSX
 
 ### Sur Windows (ActivePerl):
 ppm install GD::Graph
 ppm install Text-Table
+ppm install Excel::Writer::XLSX
 
