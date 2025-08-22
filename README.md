@@ -30,3 +30,10 @@ GD::Graph::Data
 Text::Table
 File::Path
 POSIX
+
+###
+Sur AIX:
+/usr/bin/perl -MCPAN -e shell
+install DBI
+install GD::Graph
+install Text::Table
