@@ -31,9 +31,18 @@ Text::Table
 File::Path
 POSIX
 
-###
-Sur AIX:
+### Sur AIX:
 /usr/bin/perl -MCPAN -e shell
 install DBI
 install GD::Graph
 install Text::Table
+
+
+### Sur Linux (RedHat/CentOS):
+yum install perl-GD perl-GDGraph perl-DBI
+cpan install Text::Table
+
+### Sur Windows (ActivePerl):
+ppm install GD::Graph
+ppm install Text-Table
+
