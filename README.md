@@ -1,14 +1,32 @@
 # Spectrum-Storage-scripts
 
+# TSM Backup Volume Reporter
 
-# Installation des Dépendances Perl
- # Sur AIX avec perl systeme
-  /usr/bin/perl -MCPAN -e shell
-   install DBI
-   install GD::Graph
-   install Text::Table
-   install File::Path
+Script Perl pour générer des rapports de volumétrie de sauvegardes TSM (IBM Spectrum Protect) avec graphiques et statistiques.
 
-  # Ou avec ppm (ActivePerl)
-  ppm install GD::Graph
-  ppm install Text-Table
+## 📊 Fonctionnalités
+
+- **Analyse de volumétrie** sur 7 ou 30 derniers jours
+- **Graphiques PNG** générés automatiquement
+- **Rapports HTML** détaillés avec statistiques
+- **Sortie console** avec visualisation ASCII
+- **Envoi email automatique** (optionnel)
+- **Support multi-plateformes** (AIX, Linux, Windows)
+
+## 📋 Prérequis
+
+### Prérequis système
+- Perl 5.10 ou supérieur
+- Accès à la ligne de commande TSM `dsmadmc`
+- Serveur TSM accessible
+
+### Modules Perl requis
+```bash
+# Modules core
+DBI
+GD::Graph
+GD::Graph::bars
+GD::Graph::Data
+Text::Table
+File::Path
+POSIX
